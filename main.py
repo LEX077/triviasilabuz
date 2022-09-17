@@ -27,33 +27,33 @@ while iniciar_programa == True:
     n_intentos += 1
 
     print('Bienvenido a mi trivia ramdom')
-    print('intento numero :', n_intentos)
+    print('\nintento numero :', n_intentos)
     time.sleep(2)
     if n_intentos == 1:
-        nombre = input(MAGENTA + 'Cual es tu nombre jugador?:  ' + RESET)
+        nombre = input(MAGENTA + '\nCual es tu nombre jugador?:  ' + RESET)
         while nombre == '':
-                nombre = input(MAGENTA + 'Ingrese un nombre valido:  ' + RESET)
+                nombre = input(MAGENTA + '\nIngrese un nombre valido:  ' + RESET)
 
-        print('''Un gusto''', nombre,
-              '''Para comenzar te dare un par de instrucciones''',
-              RED + '''presta mucha atencion''', RESET + '')
+        print('''\nUn gusto''', nombre,
+              '''\nPara comenzar te dare un par de instrucciones''',
+              RED + '''\npresta mucha atencion''', RESET + '')
     else:
-        print('HOLA DE NUEVO', nombre)
-        print('''Bueno ya sabes como va esto''', nombre,
-              RED + '''presta mucha atencion''', RESET + '')
+        print('\nHOLA DE NUEVO', nombre)
+        print('''\nBueno ya sabes como va esto''', nombre,
+              RED + '''\npresta mucha atencion''', RESET + '')
     time.sleep(2)
 
     print(
-        '''para responder escribe la letra de la alternativa correcta y pulsa[ENTER] para enviar tu respuesta 
-cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
+        '''\nPara responder escribe la letra de la alternativa correcta y pulsa[ENTER] para enviar tu respuesta 
+\nCada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     )
     # variable que indica la puntuacion dentro del bucle para reiniciarse
     score = 0
     time.sleep(2)
-    print('''Estas listo???''')
+    print('''\nEstas listo???''')
 
     time.sleep(1)
-    input('''presiona [ENTER] para inciar''')
+    input('''\npresiona [ENTER] para inciar''')
 
     print('tu puntaje es:' + str(score))
     # uso de for para crear una cuenta regresiva
@@ -67,7 +67,7 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
 # aqui comiencian las preguntas
 # magenta y reset variables para controlar el color
     print(
-        MAGENTA + '''¿Quien  fue el primer hombre en la luna?''', RESET + '''
+        MAGENTA + '''\n¿Quien  fue el primer hombre en la luna?''', RESET + '''
          a) Neil Alden Armstrong
          b) Homero Simpson
          c) Bartolome Lin
@@ -97,10 +97,10 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     print('tu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
-        MAGENTA + '''¿Quien es el creador de paypal?''', RESET + '''
+        MAGENTA + '''\n¿Quien es el creador de paypal?''', RESET + '''
          a) Nickola Tesla
          b) Leonardo da Vinci
          c) Elon Musk
@@ -123,13 +123,13 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
-        MAGENTA + ''' ¿Cuántas franjas tiene la bandera de Estados Unidos?''',
+        MAGENTA + '''\n ¿Cuántas franjas tiene la bandera de Estados Unidos?''',
         RESET + '''
              a) 15
              b) 13
@@ -152,14 +152,14 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
         MAGENTA +
-        '''4) ¿Cuál de los siguientes imperios no tenía un idioma escrito: 
+        '''4) \n¿Cuál de los siguientes imperios no tenía un idioma escrito: 
                   Inca, Aztecas, Egipcios, Romanos?''', RESET + '''
              a) Inca
              b) Azteca
@@ -183,13 +183,13 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
-        MAGENTA + ''' ¿Cuál es el río más largo del mundo?''', RESET + '''
+        MAGENTA + ''' \n¿Cuál es el río más largo del mundo?''', RESET + '''
              a) Missisipi
              b) Nilo
              c) Amazonas
@@ -211,14 +211,14 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s1
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
         MAGENTA +
-        '''¿Cómo le llaman los locales a la Ciudad de Nueva York por la noche?''',
+        '''\n¿Cómo le llaman los locales a la Ciudad de Nueva York por la noche?''',
         RESET + '''
              a) La Gran Manzana
              b) Las Vegas
@@ -244,13 +244,13 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
-        MAGENTA + '''7)¿Cuál es la obra más famosa de Edvard Munch?''',
+        MAGENTA + '''\n7)¿Cuál es la obra más famosa de Edvard Munch?''',
         RESET + '''
              a) La monalisa
              b) El Grito
@@ -273,13 +273,13 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
-        MAGENTA + '''8)¿Quién inventó la World Wide Web, y cuándo?''',
+        MAGENTA + '''\n8)¿Quién inventó la World Wide Web, y cuándo?''',
         RESET + '''
              a) Issac Newtom ,1458
              b) Albert Einstem ,1945
@@ -303,13 +303,13 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s1
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
-        MAGENTA + '''9)¿Cuántas teclas tiene un piano?''', RESET + '''
+        MAGENTA + '''\n9)¿Cuántas teclas tiene un piano?''', RESET + '''
              a) 50
              b) 53
              c) 59
@@ -331,14 +331,14 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s
 
-    print('tu puntaje es:' + str(score))
+    print('\ntu puntaje es:' + str(score))
 
     time.sleep(1)
-    input('[ENTER] para continuar')
+    input('\n[ENTER] para continuar')
 
     print(
         MAGENTA +
-        '''10)¿En que serie anime el protagonista pelea contra algeles gigantes?''',
+        '''\n10)¿En que serie anime el protagonista pelea contra algeles gigantes?''',
         RESET + '''
              a) Naruto SHIPUDEN
              b) V de Vendetta
@@ -361,10 +361,10 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
     else:
         score -= s1
 
-    print('tu puntaje es:' + str(score))
-    print('tienes una ultima chance de aumentar tus puntos '
-          'pero es una apuesta arriesgada!!!!!   '
-          'aceptas SI O NO?')
+    print('\ntu puntaje es:' + str(score))
+    print('\ntienes una ultima chance de aumentar tus puntos '
+          '\npero es una apuesta arriesgada!!!!!   '
+          '\naceptas SI O NO?')
     # aqui se le pide al jugador si quiere apostar
     random.randint(-50, 10)
     opcion_final = input('responde con si o no   ').lower()
@@ -372,16 +372,16 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
         surprise = random.randint(-50, 10)
         score += surprise
     else:
-        print('sabia desicion')
+        print('\nsabia desicion')
 
-    print('tu puntuacion final es :', score)
+    print('\ntu puntuacion final es :', score)
     # el jugador obtine un mensaje de acuerdo al rango de su puntaje
     if -100 <= score <= 10:
-        print('vale, no es tu dia')
+        print('\nvale, no es tu dia')
     if 11 <= score <= 20:
-        print('suerte o habilidad?')
+        print('\nsuerte o habilidad?')
     elif 20 <= score <= 100:
-        print('Menuda suerte debes de tener')
+        print('\nMenuda suerte debes de tener')
     # peticion para reiniciar el juego en un nuevo intento o dejar de jugar
     print("\n¿QUIRES INTENTARLO DE NUEVO?")
     nuevo_intento = input(
@@ -389,7 +389,7 @@ cada pregunta tiene un puntaje aleatorio...podras ver tu puntaje en pantalla.'''
         )
 
     if nuevo_intento != "si":
-        print("Espero que la hayas pasado genial, hasta la proxima", nombre)
+        print("\nEspero que la hayas pasado genial, hasta la proxima", nombre)
         iniciar_programa = False
     # para quien lea esto gracias por jugar mi trivia estoy seguro que el codigo debe de ser horrible pero me diverti mucho haciendola
     # llevo un par de dias recien con python pero me alegro de haber dado un paso en este mundo incluso si fallo el proceso de seleccion
